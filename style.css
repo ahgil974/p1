@@ -367,6 +367,17 @@ a {
     opacity: 0;
 }
 
+.fleche-allworks {
+    text-align: center;
+    color: #3b6e87;
+    font-size: 2em;
+    width: 22px;
+    position: absolute;
+    bottom: -20px;
+    padding-left: 7%;
+    opacity: 0;
+}
+
 .projets-menu li:hover i {
     opacity: 1;
 }
