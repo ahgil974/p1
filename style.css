@@ -383,8 +383,8 @@ a {
 
 .projets-gallery figure {
     position: relative;
+    display: flex;
     width: 340px;
-    height: 228px;
     margin: 40px;
 }
 
@@ -396,7 +396,7 @@ a {
     display: none;
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
-    width: 340px;
+    width: 100%;
     height: 90px;
     bottom: 2px;
     color: white;
@@ -404,17 +404,19 @@ a {
 
 .projets-gallery .cercle-fig {
     position: absolute;
-    height: 35px;
-    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
     background-color: #5CADD3;
     border: 2px solid white;
     border-radius: 50%;
     top: -20px;
-    left: 280px;
+    right: 10%;
 }
 
 .projets-gallery figure i {
-    position: absolute;
     color: white;
     font-size: 0.8em;
     right: 35px;
@@ -454,7 +456,7 @@ iframe {
 
 .formulaire {
     margin-top: 80px;
-    width: 30%;
+    width: 25%;
     right: 15%;
     padding: 30px;
     background-color: rgba(255, 255, 255, 0.8);
@@ -467,6 +469,7 @@ input {
     margin: 8px 0;
     box-sizing: border-box;
     font-family: 'Roboto-Medium', Arial, serif;
+    font-size: 1rem;
 }
 
 textarea {
@@ -477,6 +480,7 @@ textarea {
     box-sizing: border-box;
     border-radius: 2%;
     font-family: 'Roboto-Medium', Arial, serif;
+    font-size: 1rem;
 }
 
 input[type=button] {
@@ -539,6 +543,10 @@ input[type=button] {
         display: block;
     }
 
+    .burger-menu :active {
+        
+    }
+
     .contenu-services {
         flex-direction: column;
     }
@@ -586,6 +594,53 @@ input[type=button] {
     .ux-design, .ui-design, .seo {
         flex-direction: column; 
     }
+    #contact {
+        display: block;
+    }
+
+    iframe {
+        height: 600px;
+
+    }
+    .filtre-bleu {
+        position: static;
+        height: 600px;
+    }
+
+    .formulaire {
+        position: static;
+        width: 100%;
+        margin: 0;
+        padding: 5% 10%;
+    }
+}
+/* ----------Smartphone Small------------------------*/
+@media screen and (max-width: 320px) {
+
+    header {
+        border-top : none;
+    }
+
+    .main-menu {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .contenu-services {
+        flex-direction: column;
+    }
+
+    .ux-design, .ui-design, .seo {
+        flex-direction: column; 
+    }
+
+    .projets-menu ul {
+        flex-direction: column;
+    }
+
     #contact {
         display: block;
     }
