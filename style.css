@@ -377,7 +377,6 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: flex-start;
     justify-content: center;
     padding: 50px 0px 50px;
 }
@@ -569,7 +568,6 @@ input[type=button] {
     }
 
     .main-menu a:hover {
-        border-top: ;
         padding-top: 10px;
     }
 
@@ -648,6 +646,7 @@ input[type=button] {
 
     .projets-menu ul {
         flex-direction: column;
+        text-align: center;
     }
 
     .projets-menu i {
