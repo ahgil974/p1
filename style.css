@@ -259,10 +259,7 @@ ul {
 .ux-design,
 .ui-design,
 .seo {
-    list-style-type: none;
     display: flex;
-    margin: 0;
-    padding: 0;
 }
 
 .services-text {
