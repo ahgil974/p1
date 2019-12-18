@@ -475,7 +475,8 @@ textarea {
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-    border-radius: 2%;
+    border-radius: 5px;
+	border: 1px solid grey;
     font-family: 'Roboto-Medium', Arial, serif;
     font-size: 1rem;
 }
@@ -484,7 +485,8 @@ input[type=button] {
     width: 150px;
     background-color: #5CADD3;
     border: 0;
-    border-radius: 5%;
+    border-radius: 5px;
+	border: 1px solid grey;
     color: white;
     border-bottom: 3px #3a84a3 solid;
 }
